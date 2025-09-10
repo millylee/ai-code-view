@@ -1,0 +1,190 @@
+extension:
+  name: 爱码视
+  description: 爱码视能够帮助你快速理解代码
+
+options_title: 扩展设置
+
+options:
+  title: 扩展设置
+  tabs:
+    general: 基本设置
+    sites: 站点管理
+    shortcuts: 快捷键
+    about: 关于
+  general:
+    name: 基本设置
+    description: 配置默认的跳转行为和目标平台
+  sites:
+    name: 站点管理
+    description: 管理代码查看平台，支持启用/禁用和自定义站点
+  shortcuts:
+    name: 快捷键
+    description: 为不同的代码查看平台设置键盘快捷键
+  about:
+    name: 关于
+    description: 扩展信息和开发者信息
+
+content:
+  log:
+    route_change: "路由变化:"
+    repo_path_not_found: "无法提取仓库路径，跳过添加阅读按钮"
+    anchor_not_found: "未找到锚点元素，跳过UI挂载"
+    repo_path_extraction_failed: "仓库路径提取失败:"
+    
+  app:
+    loading_config_failed: "加载配置失败:"
+    shortcuts_disabled: "[快捷键] 快捷键功能已禁用"
+    shortcuts_enabled: "[快捷键] 快捷键监听已启用"
+    key_detected: "[快捷键] 检测到按键组合:"
+    shortcut_mapping: "[快捷键] 当前快捷键映射:"
+    site_matched: "[快捷键] 匹配到站点:"
+    opening_url: "[快捷键] 即将打开:"
+    no_matching_site: "[快捷键] 未找到匹配的站点"
+    shortcut_processing_failed: "快捷键处理失败:"
+    shortcuts_removed: "[快捷键] 快捷键监听已移除"
+    default_site_unavailable: "默认站点不可用，使用第一个可用站点:"
+    no_available_sites: "没有可用的站点"
+    loading: "加载中..."
+    read: "阅读"
+    click_to_jump: "点击跳转到 {0}，悬停查看更多选项"
+    click_to_read: "点击阅读代码"
+    ai_analysis: "🤖 AI 分析"
+    source_reading: "📖 源码阅读"
+    default_indicator: "（默认）"
+
+config:
+  loading: "加载中..."
+  save_success: "保存成功"
+  save_success_desc: "设置已保存"
+  save_failed: "保存失败"
+  save_failed_desc: "保存失败，请重试"
+  reset_success: "重置成功"
+  reset_success_desc: "设置已重置为默认值"
+  reset_failed: "重置失败"
+  reset_failed_desc: "重置失败，请重试"
+  site_enabled: "站点已启用"
+  site_disabled: "站点已禁用"
+  site_enabled_desc: "已启用该站点"
+  site_disabled_desc: "已禁用该站点"
+  operation_failed: "操作失败"
+  operation_failed_desc: "操作失败，请重试"
+  delete_confirm: "确定要删除这个站点吗？"
+  delete_success: "删除成功"
+  delete_success_desc: "站点已删除"
+  delete_failed: "删除失败"
+  feature_in_development: "功能开发中"
+  edit_feature_coming: "编辑功能即将开放"
+  add_feature_coming: "添加站点功能即将开放"
+  
+  general:
+    title: "基本设置"
+    description: "配置默认的跳转行为和目标平台"
+    default_target_title: "默认跳转目标"
+    default_target_desc: "选择直接点击「阅读」按钮时默认跳转的代码查看平台，悬停查看所有选项"
+    open_method_title: "打开方式"
+    open_method_desc: "配置链接的打开行为"
+    new_tab_label: "在新标签页中打开"
+    new_tab_desc: "启用后，点击站点链接将在新标签页中打开；关闭后将在当前标签页中打开"
+    save_settings: "保存设置"
+    reset_default: "重置为默认"
+    
+  sites:
+    title: "站点管理"
+    description: "管理代码查看平台，支持启用/禁用和自定义站点"
+    available_sites: "可用站点"
+    available_sites_desc: "管理所有可用的代码查看平台，点击眼睛图标启用/禁用站点"
+    built_in: "内置"
+    source_reading: "📖 源码阅读"
+    ai_analysis: "🤖 AI 分析"
+    enable_site: "启用站点"
+    disable_site: "禁用站点"
+    edit_site: "编辑站点"
+    delete_site: "删除站点"
+    add_custom_site: "添加自定义站点"
+    max_sites_desc: "最多可添加 20 个自定义站点"
+    statistics: "统计信息"
+    total_sites: "总站点数"
+    enabled_sites: "已启用"
+    custom_sites: "自定义站点"
+    
+  shortcuts:
+    title: "快捷键设置"
+    description: "为不同的代码查看平台设置键盘快捷键"
+    global_settings: "全局设置"
+    global_settings_desc: "控制快捷键功能的总开关"
+    enable_shortcuts: "启用快捷键"
+    enable_shortcuts_desc: "启用后，可在 GitHub 页面使用快捷键快速跳转"
+    site_shortcuts: "站点快捷键"
+    site_shortcuts_desc: "为每个站点设置独立的快捷键组合"
+    disabled_site: "已禁用"
+    site_disabled_desc: "站点已禁用"
+    usage_instructions: "使用说明"
+    usage_1: "在 GitHub 仓库页面按下设置的快捷键即可快速跳转到对应平台"
+    usage_2: "快捷键必须包含至少一个修饰键（Ctrl、Alt、Shift、Meta）"
+    usage_3: "系统会自动检测快捷键冲突并提示"
+    usage_4: "只有启用的站点才能设置快捷键"
+    
+  about:
+    title: "关于"
+    description: "扩展信息和开发者信息"
+    extension_name: "爱码视"
+    extension_desc: "快速跳转到不同的代码查看平台"
+    version: "版本"
+    type: "类型"
+    chrome_extension: "Chrome扩展"
+    manifest: "Manifest"
+    permissions: "权限"
+    supported_platforms: "支持的平台"
+    extension_info: "此扩展帮助开发者快速在不同的代码查看平台之间切换，提高代码浏览和分析的效率。"
+
+shortcut:
+  invalid_shortcut: "快捷键无效"
+  invalid_shortcut_desc: "快捷键必须包含至少一个修饰键"
+  shortcut_updated: "快捷键已更新"
+  shortcut_updated_desc: "{0} 的快捷键已设置为 {1}"
+  set_failed: "设置失败"
+  shortcut_removed: "快捷键已移除"
+  shortcut_removed_desc: "已移除 {0} 的快捷键"
+  remove_failed: "移除失败"
+  shortcut_enabled: "快捷键已启用"
+  shortcut_disabled: "快捷键已禁用"
+  shortcut_enabled_desc: "{0} 的快捷键已启用"
+  shortcut_disabled_desc: "{0} 的快捷键已禁用"
+  edit_shortcut: "编辑快捷键"
+  modifiers: "修饰键"
+  main_key: "主键"
+  preview: "预览"
+  conflict_warning: "快捷键冲突：{0}"
+  no_shortcut: "未设置快捷键"
+  set_shortcut: "设置快捷键"
+  remove_shortcut: "移除快捷键"
+  cancel: "取消"
+  save: "保存"
+
+sites:
+  categories:
+    source:
+      name: "📖 源码阅读"
+      description: "在线代码编辑器和查看工具"
+    ai:
+      name: "🤖 AI 分析"
+      description: "智能代码分析和文档生成工具"
+  
+  descriptions:
+    github1s: "非官方 GitHub 在线代码编辑器，基于 VS Code"
+    github_dev: "GitHub 官方在线代码编辑器，基于 VS Code"
+    sourcegraph: "强大的代码搜索和导航工具"
+    zread: "智能代码文档和分析平台"
+    deepwiki: "智能代码文档和分析平台"
+  
+  errors:
+    max_sites_exceeded: "最多只能添加 {0} 个自定义站点"
+    site_id_exists: "站点ID已存在"
+    site_not_exist: "站点不存在"
+    builtin_cannot_delete: "内置站点不能删除，只能禁用"
+    sites_not_exist: "站点不存在：{0}"
+    shortcut_conflict: "快捷键冲突：{0}"
+    name_required: "站点名称不能为空"
+    url_template_invalid: "URL模板格式无效，必须包含 {REPO_PATH} 占位符"
+    category_invalid: "站点分类必须是 source 或 ai"
+    icon_required: "图标不能为空"

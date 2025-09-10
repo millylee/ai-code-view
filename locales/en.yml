@@ -1,0 +1,190 @@
+extension:
+  name: AI Code View
+  description: AI Code View helps you quickly understand code
+
+options_title: Extension Settings
+
+options:
+  title: Extension Settings
+  tabs:
+    general: General Settings
+    sites: Sites Management
+    shortcuts: Shortcuts
+    about: About
+  general:
+    name: General Settings
+    description: Configure default jump behavior and target platform
+  sites:
+    name: Sites Management
+    description: Manage code viewing platforms, support enable/disable and custom sites
+  shortcuts:
+    name: Shortcuts
+    description: Configure shortcuts for different code viewing platforms
+  about:
+    name: About
+    description: About extension and developer information
+
+content:
+  log:
+    route_change: "Route changed:"
+    repo_path_not_found: "Unable to extract repository path, skipping add reading button"
+    anchor_not_found: "Anchor element not found, skipping UI mount"
+    repo_path_extraction_failed: "Repository path extraction failed:"
+    
+  app:
+    loading_config_failed: "Failed to load configuration:"
+    shortcuts_disabled: "[Shortcuts] Shortcut functionality is disabled"
+    shortcuts_enabled: "[Shortcuts] Shortcut listener enabled"
+    key_detected: "[Shortcuts] Key combination detected:"
+    shortcut_mapping: "[Shortcuts] Current shortcut mapping:"
+    site_matched: "[Shortcuts] Site matched:"
+    opening_url: "[Shortcuts] About to open:"
+    no_matching_site: "[Shortcuts] No matching site found"
+    shortcut_processing_failed: "Shortcut processing failed:"
+    shortcuts_removed: "[Shortcuts] Shortcut listener removed"
+    default_site_unavailable: "Default site unavailable, using first available site:"
+    no_available_sites: "No available sites"
+    loading: "Loading..."
+    read: "Read"
+    click_to_jump: "Click to jump to {0}, hover to see more options"
+    click_to_read: "Click to read code"
+    ai_analysis: "🤖 AI Analysis"
+    source_reading: "📖 Source Reading"
+    default_indicator: " (Default)"
+
+config:
+  loading: "Loading..."
+  save_success: "Save successful"
+  save_success_desc: "Settings saved"
+  save_failed: "Save failed"
+  save_failed_desc: "Save failed, please try again"
+  reset_success: "Reset successful"
+  reset_success_desc: "Settings have been reset to default values"
+  reset_failed: "Reset failed"
+  reset_failed_desc: "Reset failed, please try again"
+  site_enabled: "Site enabled"
+  site_disabled: "Site disabled"
+  site_enabled_desc: "Site has been enabled"
+  site_disabled_desc: "Site has been disabled"
+  operation_failed: "Operation failed"
+  operation_failed_desc: "Operation failed, please try again"
+  delete_confirm: "Are you sure you want to delete this site?"
+  delete_success: "Delete successful"
+  delete_success_desc: "Site deleted"
+  delete_failed: "Delete failed"
+  feature_in_development: "Feature in development"
+  edit_feature_coming: "Edit feature coming soon"
+  add_feature_coming: "Add site feature coming soon"
+  
+  general:
+    title: "General Settings"
+    description: "Configure default jump behavior and target platform"
+    default_target_title: "Default Jump Target"
+    default_target_desc: "Select the default code viewing platform when clicking the 'Read' button directly, hover to see all options"
+    open_method_title: "Open Method"
+    open_method_desc: "Configure link opening behavior"
+    new_tab_label: "Open in new tab"
+    new_tab_desc: "When enabled, clicking site links will open in a new tab; when disabled, will open in current tab"
+    save_settings: "Save Settings"
+    reset_default: "Reset to Default"
+    
+  sites:
+    title: "Sites Management"
+    description: "Manage code viewing platforms, support enable/disable and custom sites"
+    available_sites: "Available Sites"
+    available_sites_desc: "Manage all available code viewing platforms, click the eye icon to enable/disable sites"
+    built_in: "Built-in"
+    source_reading: "📖 Source Reading"
+    ai_analysis: "🤖 AI Analysis"
+    enable_site: "Enable site"
+    disable_site: "Disable site"
+    edit_site: "Edit site"
+    delete_site: "Delete site"
+    add_custom_site: "Add Custom Site"
+    max_sites_desc: "Maximum 20 custom sites can be added"
+    statistics: "Statistics"
+    total_sites: "Total Sites"
+    enabled_sites: "Enabled"
+    custom_sites: "Custom Sites"
+    
+  shortcuts:
+    title: "Shortcuts Settings"
+    description: "Set keyboard shortcuts for different code viewing platforms"
+    global_settings: "Global Settings"
+    global_settings_desc: "Master switch for shortcut functionality"
+    enable_shortcuts: "Enable Shortcuts"
+    enable_shortcuts_desc: "When enabled, you can use shortcuts to quickly jump on GitHub pages"
+    site_shortcuts: "Site Shortcuts"
+    site_shortcuts_desc: "Set independent shortcut combinations for each site"
+    disabled_site: "Disabled"
+    site_disabled_desc: "Site is disabled"
+    usage_instructions: "Usage Instructions"
+    usage_1: "Press the set shortcut keys on GitHub repository pages to quickly jump to the corresponding platform"
+    usage_2: "Shortcuts must contain at least one modifier key (Ctrl, Alt, Shift, Meta)"
+    usage_3: "The system will automatically detect shortcut conflicts and provide prompts"
+    usage_4: "Only enabled sites can set shortcuts"
+    
+  about:
+    title: "About"
+    description: "Extension information and developer information"
+    extension_name: "AI Code View"
+    extension_desc: "Quick jump to different code viewing platforms"
+    version: "Version"
+    type: "Type"
+    chrome_extension: "Chrome Extension"
+    manifest: "Manifest"
+    permissions: "Permissions"
+    supported_platforms: "Supported Platforms"
+    extension_info: "This extension helps developers quickly switch between different code viewing platforms, improving the efficiency of code browsing and analysis."
+
+shortcut:
+  invalid_shortcut: "Invalid shortcut"
+  invalid_shortcut_desc: "Shortcut must contain at least one modifier key"
+  shortcut_updated: "Shortcut updated"
+  shortcut_updated_desc: "Shortcut for {0} has been set to {1}"
+  set_failed: "Set failed"
+  shortcut_removed: "Shortcut removed"
+  shortcut_removed_desc: "Shortcut for {0} has been removed"
+  remove_failed: "Remove failed"
+  shortcut_enabled: "Shortcut enabled"
+  shortcut_disabled: "Shortcut disabled"
+  shortcut_enabled_desc: "Shortcut for {0} has been enabled"
+  shortcut_disabled_desc: "Shortcut for {0} has been disabled"
+  edit_shortcut: "Edit Shortcut"
+  modifiers: "Modifiers"
+  main_key: "Main Key"
+  preview: "Preview"
+  conflict_warning: "Shortcut conflict: {0}"
+  no_shortcut: "No shortcut set"
+  set_shortcut: "Set shortcut"
+  remove_shortcut: "Remove shortcut"
+  cancel: "Cancel"
+  save: "Save"
+
+sites:
+  categories:
+    source:
+      name: "📖 Source Reading"
+      description: "Online code editors and viewing tools"
+    ai:
+      name: "🤖 AI Analysis"
+      description: "Intelligent code analysis and documentation generation tools"
+  
+  descriptions:
+    github1s: "Unofficial GitHub online code editor, based on VS Code"
+    github_dev: "GitHub official online code editor, based on VS Code"
+    sourcegraph: "Powerful code search and navigation tool"
+    zread: "Intelligent code documentation and analysis platform"
+    deepwiki: "Intelligent code documentation and analysis platform"
+  
+  errors:
+    max_sites_exceeded: "Maximum {0} custom sites allowed"
+    site_id_exists: "Site ID already exists"
+    site_not_exist: "Site does not exist"
+    builtin_cannot_delete: "Built-in sites cannot be deleted, only disabled"
+    sites_not_exist: "Sites do not exist: {0}"
+    shortcut_conflict: "Shortcut conflict: {0}"
+    name_required: "Site name cannot be empty"
+    url_template_invalid: "Invalid URL template format, must contain {REPO_PATH} placeholder"
+    category_invalid: "Site category must be source or ai"
+    icon_required: "Icon cannot be empty"
