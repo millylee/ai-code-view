@@ -16,7 +16,7 @@ export default defineConfig({
       'scripting',
       'tabs'
     ],
-    host_permissions: ['<all_urls>'],
+    host_permissions: ['*://*.github.com/*'],
     action: {
       default_title: '__MSG_extension_name__',
     },
