@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code View「爱码视」- 程序员的代码阅读助手</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans SC', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .hover-scale {
+            transition: transform 0.2s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold text-gray-900">AI Code View「爱码视」</h1>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#features" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium">功能特性</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium">使用方法</a>
+                    <a href="#install" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium">安装扩展</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                程序员的代码阅读助手
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 text-purple-100">
+                一键跳转到各种代码分析和阅读网站，让代码理解变得简单高效
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="https://chrome.google.com/webstore/detail/diemcoeopjkfebcjlppfabjncmjefelm"
+                   target="_blank"
+                   class="bg-white text-purple-700 px-8 py-3 rounded-lg font-semibold hover-scale inline-block">
+                    📥 Chrome 扩展安装
+                </a>
+                <a href="https://microsoftedge.microsoft.com/addons/detail/kchlpiplbhflmfclcjgkdkcbnplmlojl"
+                   target="_blank"
+                   class="bg-purple-800 text-white px-8 py-3 rounded-lg font-semibold hover-scale inline-block">
+                    📥 Edge 扩展安装
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">核心功能</h3>
+                <p class="text-lg text-gray-600">为开发者提供全方位的代码阅读和分析体验</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl card-shadow">
+                    <div class="text-purple-600 text-3xl mb-4">🤖</div>
+                    <h4 class="text-xl font-semibold mb-3">AI 代码分析</h4>
+                    <p class="text-gray-600">快速跳转到 ZRead、DeepWiki 等 AI 平台，获取智能代码文档和分析</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl card-shadow">
+                    <div class="text-purple-600 text-3xl mb-4">📖</div>
+                    <h4 class="text-xl font-semibold mb-3">源码阅读</h4>
+                    <p class="text-gray-600">支持 GitHub.dev、GitHub1s、Sourcegraph 等多种源码阅读平台</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl card-shadow">
+                    <div class="text-purple-600 text-3xl mb-4">⌨️</div>
+                    <h4 class="text-xl font-semibold mb-3">快捷键支持</h4>
+                    <p class="text-gray-600">可自定义快捷键，无需鼠标点击即可快速访问常用的代码分析平台</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">使用方法</h3>
+                <p class="text-lg text-gray-600">简单三步，开启高效的代码阅读体验</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-purple-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        1
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">安装扩展</h4>
+                    <p class="text-gray-600">Chrome Web Store/Microsoft Edge Addons</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-purple-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        2
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">访问 GitHub</h4>
+                    <p class="text-gray-600">打开任何 GitHub 仓库页面，扩展会注入"阅读"按钮</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-purple-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        3
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">一键分析</h4>
+                    <p class="text-gray-600">点击按钮选择想要的分析平台，即可跳转到对应页面</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshot Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">功能截图</h3>
+                <p class="text-lg text-gray-600">实际使用界面展示</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 使用界面 -->
+                <div class="bg-white rounded-xl card-shadow overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/9LFZobZwJ9EMSoovCQ3LPDumDSyRX8F3y_udaPXLWegJqsDlstKBD2DFVJqaP-tUr1jgob_qew8bqbRYZLDgqqj0_1Q=s1600-w1600-h1000"
+                         alt="使用界面"
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">使用界面</h4>
+                        <p class="text-gray-600">在 GitHub 仓库页面自动显示"阅读"按钮，点击即可访问各种代码分析平台</p>
+                    </div>
+                </div>
+
+                <!-- 常规设置 -->
+                <div class="bg-white rounded-xl card-shadow overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/h8oRrvs5_ipcc6QPfn6CBfxXcwMh1rLJ8Kd8Ej18v-BFQi4yaILYLNnA6vTCpxJBzwjf0S0L-PzgC3LxCNiX4FU2pw=s1280-w1280-h800"
+                         alt="常规设置"
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">常规设置</h4>
+                        <p class="text-gray-600">自定义默认打开方式、新标签页设置等基础配置选项</p>
+                    </div>
+                </div>
+
+                <!-- 快捷键设置 -->
+                <div class="bg-white rounded-xl card-shadow overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/WvkjFUy6mBG5mYIl3ho1RR31Pyzjvcg-rgtWUWxKB97Olt6TJJqKO6aggCAGRY6rtVS7loWptB-LPtHs8a0yPpy06Rg=s1280-w1280-h800"
+                         alt="快捷键设置"
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">快捷键设置</h4>
+                        <p class="text-gray-600">为不同的代码分析平台设置快捷键，无需鼠标点击即可快速访问</p>
+                    </div>
+                </div>
+
+                <!-- 站点管理 -->
+                <div class="bg-white rounded-xl card-shadow overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/Zx3nJeqGIDlCizoTfcrQYUXeLy0gJv4TUxfQ9eRsLehW_9ydpHpVY7YzzNAqgm2aLlv-kmURXNOEkjoFV-Om0SBG4w=s1280-w1280-h800"
+                         alt="站点管理"
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">站点管理</h4>
+                        <p class="text-gray-600">管理可用的代码分析和阅读站点，启用或禁用特定平台</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="install" class="py-20 bg-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">立即安装</h3>
+                <p class="text-lg text-gray-600">选择适合你的浏览器，开始高效的代码阅读之旅</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-xl card-shadow text-center">
+                    <div class="text-6xl mb-4">🌐</div>
+                    <h4 class="text-2xl font-semibold mb-4">Chrome 扩展</h4>
+                    <p class="text-gray-600 mb-6">适用于 Chrome 和基于 Chromium 的浏览器</p>
+                    <a href="https://chrome.google.com/webstore/detail/diemcoeopjkfebcjlppfabjncmjefelm"
+                       target="_blank"
+                       class="bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover-scale inline-block">
+                        安装 Chrome 扩展
+                    </a>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl card-shadow text-center">
+                    <div class="text-6xl mb-4">🔷</div>
+                    <h4 class="text-2xl font-semibold mb-4">Edge 扩展</h4>
+                    <p class="text-gray-600 mb-6">适用于 Microsoft Edge 浏览器</p>
+                    <a href="https://microsoftedge.microsoft.com/addons/detail/kchlpiplbhflmfclcjgkdkcbnplmlojl"
+                       target="_blank"
+                       class="bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover-scale inline-block">
+                        安装 Edge 扩展
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">AI Code View「爱码视」</h5>
+                    <p class="text-gray-400">让代码阅读变得简单高效，为开发者提供全方位的代码分析体验。</p>
+                </div>
+
+                <div>
+                    <!-- Empty middle column to maintain layout structure -->
+                </div>
+
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">支持</h5>
+                    <p class="text-gray-400">如有问题或建议，欢迎通过 GitHub Issues 联系。</p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p id="copyright-text">&copy; AI Code View. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year dynamically
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYear = new Date().getFullYear();
+            const copyrightElement = document.getElementById('copyright-text');
+            copyrightElement.textContent = `© ${currentYear} AI Code View. All rights reserved.`;
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
